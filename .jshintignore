@@ -1,0 +1,3 @@
+node_modules
+src/shippy.template.js
+shippy.min.js

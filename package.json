@@ -1,0 +1,18 @@
+{
+  "author": "Henrik Joreteg <henrik@andyet.net>",
+  "name": "time-counter",
+  "description": "Simple time counter tracker",
+  "tags": ["browser", "clientmodules", "timer", "countdown"],
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/henrikjoreteg/time-counter.js.git"
+  },
+  "main": "./time-counter.js",
+  "dependencies": {
+    "wildemitter": "0.0.5"
+  },
+  "devDependencies": {
+    "browserify": "2.18.1"
+  }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="time-counter.bundled.js"></script>
+        <title>Time Counter</title>
+    </head>
+    <body>
+        <div style="width: 45%; float: left">
+            <h2>Count up (test 1)</h2>
+            <h4>Code:</h4>
+            <pre><code id="countUp">
+var countUp = new TimeCounter(),
+    upOutputEl = document.getElementById("countUpOutput");
+
+// log out output
+countUp.on('*', console.log.bind(console));
+
+// set output value in output el
+countUp.on('change', function (val) {
+    upOutputEl.innerHTML = val;
+});
+
+countUp.start();
+            </code></pre>
+            <h4>Result</h4>
+            <div id="countUpOutput"></div>
+        </div>
+        <div style="width: 45%; float: left">
+            <h2>Count down (test 2)</h2>
+            <h4>Code:</h4>
+            <pre><code id="countDown">
+var countDown = new TimeCounter({
+        direction: 'down',
+        startValue: '0:30'
+    }),
+    outputEl = document.getElementById("countDownOutput");
+
+// log out all events
+countDown.on('*', console.log.bind(console));
+
+// set output value in output el
+countDown.on('change', function (val) {
+    outputEl.innerHTML = val;
+});
+
+countDown.start();
+
+// alert when done
+countDown.on('done', function () {
+    alert('Count down done!');
+});
+            </code></pre>
+            <h4>Result</h4>
+            <div id="countDownOutput"></div>
+        </div>
+        <script>
+            var countUpCode = document.getElementById('countUp').innerText,
+                countDownCode = document.getElementById('countDown').innerText;
+
+            // eval FTW! :)
+            eval(countUpCode);
+            eval(countDownCode);
+        </script>
+    </body>
+</html>

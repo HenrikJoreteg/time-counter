@@ -1,0 +1,18 @@
+{
+    "asi": false,
+    "expr": true,
+    "loopfunc": true,
+    "curly": false,
+    "evil": true,
+    "white": true,
+    "undef": true,
+    "predef": [
+        "process",
+        "socket",
+        "require",
+        "exports",
+        "console",
+        "module",
+        "setTimeout"
+    ]
+}
