@@ -36,7 +36,7 @@ Timer.prototype.setStartTime = function () {
     if (this.config.direction === 'down') {
         // adding 1 second here actually ensures that the first value is going to be what
         // was passed in as start time since we're using Math.floor, this makes sense.
-        this.timerTargetTime = now + this._parseStartValue(this.config.startValue) + 1000;
+        this.timerTargetTime = now + this._parseStartValue(this.config.startValue) + 999;
     }
 };
 
