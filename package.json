@@ -2,8 +2,13 @@
   "author": "Henrik Joreteg <henrik@andyet.net>",
   "name": "time-counter",
   "description": "Simple time counter tracker",
-  "tags": ["browser", "clientmodules", "timer", "countdown"],
-  "version": "0.0.2",
+  "tags": [
+    "browser",
+    "clientmodules",
+    "timer",
+    "countdown"
+  ],
+  "version": "1.0.0",
   "repository": {
     "type": "git",
     "url": "git://github.com/henrikjoreteg/time-counter.git"
