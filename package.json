@@ -6,7 +6,7 @@
   "version": "0.0.2",
   "repository": {
     "type": "git",
-    "url": "git://github.com/henrikjoreteg/time-counter.js.git"
+    "url": "git://github.com/henrikjoreteg/time-counter.git"
   },
   "main": "./time-counter.js",
   "dependencies": {
